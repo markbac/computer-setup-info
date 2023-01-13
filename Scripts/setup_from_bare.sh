@@ -93,6 +93,7 @@ declare -a apt-packages=(
     ncdu
     stacer
     zim
+    zsh
 )
 
 declare -a rust-packages=(
@@ -125,8 +126,20 @@ declare -a fonts=(
     UbuntuMono
 )
 
+declare -a pip-packages=(
+    erd-from-json-table-schema 
+    pdfkit 
+    pywebcopy
+    diagrams
+)
 
+declare -a pip3-packages=(
+    glances
+    glances[all]
+)
 
+echo "#####"
+echo "Install apt packages"
 for font in "${apt-packages[@]}"; do
     echo "#####"
     echo ""
@@ -173,7 +186,8 @@ PATH=$PATH:/home/mbacon/.cargo/bin
 
 cargo install cargo-update
 
-echo "Install rust apps"
+echo "#####"
+echo "Install rust packages"
 for font in "${rust-packages[@]}"; do
     echo "#####"
     echo ""
@@ -208,7 +222,6 @@ rm ./browsh_1.8.0_linux_amd64.deb
 
 flatpak install --user com.jetpackduba.Gitnuro
 
-sudo apt install zsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
@@ -223,11 +236,29 @@ echo $ProvidedPasword | sudo -S  chmod +x /usr/local/bin/ctop
 
 
 source ~/.bashrc
+echo "#####"
+echo "Install pip packages"
+for font in "${pip-packages[@]}"; do
+    echo "#####"
+    echo ""
+    echo "Installing ${pip-packages}"
+    pip install ${pip-packages}
+    echo ""
+    echo "#####"
+    echo ""
+done
 
-pip install erd-from-json-table-schema pdfkit pywebcopy
-pip3 install --user glances
-pip3 install --user glances[all]
-echo $ProvidedPasword | sudo -S npm install -g vtop gtop
+echo "#####"
+echo "Install pip3 packages"
+for font in "${pip-packages[@]}"; do
+    echo "#####"
+    echo ""
+    echo "Installing ${pip-packages}"
+    pip3 install --user  ${pip-packages}
+    echo ""
+    echo "#####"
+    echo ""
+done
 
 go install github.com/nikitavoloboev/gitupdate@latest
 
