@@ -18,6 +18,79 @@ echo "apt upgrade"
 echo $ProvidedPasword | sudo -S apt -y upgrade
 echo "apt install packages"
 
+declare -a vscode-extensions=(
+    42Crunch.vscode-openapi
+    4ops.terraform
+    aaron-bond.better-comments
+    alefragnani.project-manager
+    anweber.httpbook
+    anweber.vscode-httpyac
+    aprilandjan.ascii-tree-generator
+    asyncapi.asyncapi-preview
+    batisteo.vscode-django
+    BitBelt.converttoasciiart
+    bmlsolutions.dotuml
+    bpruitt-goddard.mermaid-markdown-syntax-highlighting
+    buianhthang.xml2json
+    chrmarti.regex
+    daiyy.quick-html-previewer
+    DavidAnson.vscode-markdownlint
+    docsmsft.docs-yaml
+    donjayamanne.python-environment-manager
+    donjayamanne.python-extension-pack
+    eamodio.gitlens
+    esbenp.prettier-vscode
+    fernandoescolar.vscode-solution-explorer
+    GitHub.vscode-pull-request-github
+    googlecloudtools.cloudcode
+    Gruntfuggly.todo-tree
+    hashicorp.terraform
+    hediet.vscode-drawio
+    jebbs.plantuml
+    johnpapa.vscode-peacock
+    kamikillerto.vscode-colorize
+    KevinRose.vsc-python-indent
+    maattdd.gitless
+    marp-team.marp-vscode
+    mermade.openapi-lint
+    mirone.milkdown
+    mohsen1.prettify-json
+    ms-azuretools.vscode-docker
+    ms-dotnettools.csharp
+    ms-edgedevtools.vscode-edge-devtools
+    ms-python.isort
+    ms-python.python
+    ms-python.vscode-pylance
+    ms-toolsai.jupyter-keymap
+    ms-vscode-remote.remote-wsl
+    ms-vscode.powershell
+    ms-vsliveshare.vsliveshare
+    ms-vsliveshare.vsliveshare-audio
+    njpwerner.autodocstring
+    pomdtr.excalidraw-editor
+    rangav.vscode-thunder-client
+    redhat.vscode-xml
+    redhat.vscode-yaml
+    shd101wyy.markdown-preview-enhanced
+    stoplight.spectral
+    streetsidesoftware.code-spell-checker
+    tberman.json-schema-validator
+    tintinweb.graphviz-interactive-preview
+    tomoki1207.pdf
+    tonybaloney.vscode-pets
+    VisualStudioExptTeam.intellicode-api-usage-examples
+    VisualStudioExptTeam.vscodeintellicode
+    VolcanicBytes.xsd-navigator
+    voldemortensen.rainbow-tags
+    vscode-icons-team.vscode-icons
+    waleedashraf.asyncapi-validator-vscode
+    wayou.vscode-todo-highlight
+    wholroyd.jinja
+    wraith13.windows-terminal
+    yzane.markdown-pdf
+    yzhang.markdown-all-in-one
+    zaaack.markdown-editor
+)
 
 declare -a apt-packages=(
     build-essential 
@@ -291,7 +364,38 @@ find "$fonts_dir" -name '*Windows Compatible*' -delete
 
 fc-cache -f
 echo "done!"
- 
+
+echo "#####"
+echo "Install vscode"
+
+if grep -qi microsoft /proc/version; then
+    # we are using WSL
+    code &
+else
+    echo $ProvidedPasword | sudo -S  apt-get install wget gpg
+    wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+    echo $ProvidedPasword | sudo -S  install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+    echo $ProvidedPasword | sudo -S  sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+    rm -f packages.microsoft.gpg
+
+    echo $ProvidedPasword | sudo -S  apt update
+    echo $ProvidedPasword | sudo -S  apt install code
+fi
+
+echo "#####"
+echo "Install vscode extensions"
+for font in "${vscode-extensions[@]}"; do
+    echo "#####"
+    echo ""
+    echo "Installing ${vscode-extensions}"
+    code --install-extension ${vscode-extensions}
+    echo ""
+    echo "#####"
+    echo ""
+done
+    
+
+
 
 echo "###################"
 echo ""

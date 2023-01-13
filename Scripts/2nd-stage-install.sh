@@ -40,9 +40,12 @@ declare -a npm-packages=(
     @asyncapi/parser
     @mock-to-openapi
     @ungit
+    vtop
+    gtop
 )
 
-echo "snap installs"
+echo "#####"
+echo "Install snap packages"
 for font in "${snap-packages[@]}"; do
     echo "#####"
     echo ""
@@ -67,7 +70,8 @@ source ~/.bashrc
 # asyncapi tools
 echo "install syncapi tools"
 
-echo "npm installs"
+echo "#####"
+echo "Install npm packages"
 for font in "${npm-packages[@]}"; do
     echo "#####"
     echo ""
