@@ -8,7 +8,7 @@ echo "Please supply password to script"
 read ProvidedPasword
 
 
-declare -a snap-packages=(
+declare -a snappackages=(
     core
     bashtop
     nutty
@@ -33,7 +33,7 @@ declare -a snap-packages=(
     joplin
 )
 
-declare -a npm-packages=(
+declare -a npmpackages=(
     @asyncapi/cli
     @asyncapi/generator
     @asyncapi/modelina
@@ -46,11 +46,11 @@ declare -a npm-packages=(
 
 echo "#####"
 echo "Install snap packages"
-for font in "${snap-packages[@]}"; do
+for snappackage in "${snappackages[@]}"; do
     echo "#####"
     echo ""
-    echo "Installing ${snap-packages}"
-    echo $ProvidedPasword | sudo -S snap install ${snap-packages}
+    echo "Installing ${snappackage}"
+    echo $ProvidedPasword | sudo -S snap install ${snappackage}
     echo ""
     echo "#####"
     echo ""
@@ -72,11 +72,11 @@ echo "install syncapi tools"
 
 echo "#####"
 echo "Install npm packages"
-for font in "${npm-packages[@]}"; do
+for npmpackage in "${npmpackages[@]}"; do
     echo "#####"
     echo ""
-    echo "Installing ${npm-packages}"
-    npm install -g ${npm-packages}
+    echo "Installing ${npmpackage}"
+    npm install -g ${npmpackage}
     echo ""
     echo "#####"
     echo ""
