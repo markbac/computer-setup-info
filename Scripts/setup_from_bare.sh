@@ -18,7 +18,7 @@ echo "apt upgrade"
 echo $ProvidedPasword | sudo -S apt -y upgrade
 echo "apt install packages"
 
-declare -a vscode-extensions=(
+declare -a vscodeextensions=(
     42Crunch.vscode-openapi
     4ops.terraform
     aaron-bond.better-comments
@@ -56,11 +56,10 @@ declare -a vscode-extensions=(
     mirone.milkdown
     mohsen1.prettify-json
     ms-azuretools.vscode-docker
-    ms-dotnettools.csharp
     ms-edgedevtools.vscode-edge-devtools
     ms-python.isort
     ms-python.python
-    ms-python.vscode-pylance
+ #   ms-python.vscode-pylance
     ms-toolsai.jupyter-keymap
     ms-vscode-remote.remote-wsl
     ms-vscode.powershell
@@ -92,7 +91,7 @@ declare -a vscode-extensions=(
     zaaack.markdown-editor
 )
 
-declare -a apt-packages=(
+declare -a aptpackages=(
     build-essential 
     procps 
     curl 
@@ -140,7 +139,6 @@ declare -a apt-packages=(
     python3-sense-emu 
     sense-emu-tools
     geany 
-    wireshark 
     vlc 
     gimp
     python3-tk 
@@ -169,7 +167,7 @@ declare -a apt-packages=(
     zsh
 )
 
-declare -a rust-packages=(
+declare -a rustpackages=(
     du-dust 
     tokei 
     bottom 
@@ -199,25 +197,25 @@ declare -a fonts=(
     UbuntuMono
 )
 
-declare -a pip-packages=(
+declare -a pippackages=(
     erd-from-json-table-schema 
     pdfkit 
     pywebcopy
     diagrams
 )
 
-declare -a pip3-packages=(
+declare -a pip3packages=(
     glances
     glances[all]
 )
 
 echo "#####"
 echo "Install apt packages"
-for font in "${apt-packages[@]}"; do
+for aptpackage in "${aptpackages[@]}"; do
     echo "#####"
     echo ""
-    echo "Installing ${apt-packages}"
-    echo $ProvidedPasword | sudo -S apt -y install ${apt-packages}
+    echo "Installing ${aptpackage}"
+    echo $ProvidedPasword | sudo -S apt -y install ${aptpackage}
     echo ""
     echo "#####"
     echo ""
@@ -261,11 +259,11 @@ cargo install cargo-update
 
 echo "#####"
 echo "Install rust packages"
-for font in "${rust-packages[@]}"; do
+for rustpackage in "${rustpackages[@]}"; do
     echo "#####"
     echo ""
-    echo "Installing ${rust-packages}"
-    cargo install ${rust-packages}
+    echo "Installing ${rustpackage}"
+    cargo install ${rustpackage}
     echo ""
     echo "#####"
     echo ""
@@ -278,8 +276,6 @@ cargo install --locked --force xplr
 echo ""
 echo "#####"
 echo ""
-
-cargo install-update -a
 
 
 echo "install pfetch"
@@ -311,11 +307,11 @@ echo $ProvidedPasword | sudo -S  chmod +x /usr/local/bin/ctop
 source ~/.bashrc
 echo "#####"
 echo "Install pip packages"
-for font in "${pip-packages[@]}"; do
+for pippackage in "${pippackages[@]}"; do
     echo "#####"
     echo ""
-    echo "Installing ${pip-packages}"
-    pip install ${pip-packages}
+    echo "Installing ${pippackage}"
+    pip install ${pippackage}
     echo ""
     echo "#####"
     echo ""
@@ -323,11 +319,11 @@ done
 
 echo "#####"
 echo "Install pip3 packages"
-for font in "${pip-packages[@]}"; do
+for pip3package in "${pip3packages[@]}"; do
     echo "#####"
     echo ""
-    echo "Installing ${pip-packages}"
-    pip3 install --user  ${pip-packages}
+    echo "Installing ${pip3package}"
+    pip3 install --user  ${pip3package}
     echo ""
     echo "#####"
     echo ""
@@ -356,8 +352,8 @@ for font in "${fonts[@]}"; do
 done
 
 if [ "${MACH}" = "WSL" ]; then
-    echo SH_THEME="[boot]" /etc/wsl.conf
-    echo SH_THEME="systemd=true" >> /etc/wsl.conf
+    echo "[boot]" >> /etc/wsl.conf
+    echo "systemd=true" >> /etc/wsl.conf
 fi
 
 find "$fonts_dir" -name '*Windows Compatible*' -delete
@@ -384,11 +380,11 @@ fi
 
 echo "#####"
 echo "Install vscode extensions"
-for font in "${vscode-extensions[@]}"; do
+for vscodeextension in "${vscodeextensions[@]}"; do
     echo "#####"
     echo ""
-    echo "Installing ${vscode-extensions}"
-    code --install-extension ${vscode-extensions}
+    echo "Installing ${vscodeextension}"
+    code --install-extension ${vscodeextension}
     echo ""
     echo "#####"
     echo ""
