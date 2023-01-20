@@ -5,6 +5,7 @@ playwright install firefox
 playwright install-deps
 chatgpt install
 
-## You will then  need to log into ChatGpt via the browser
-## after that just use
+You will then  need to log into ChatGpt via the browser
+after that just use
+
 chatgpt
