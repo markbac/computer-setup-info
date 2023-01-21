@@ -203,6 +203,7 @@ declare -a pippackages=(
     diagrams
     pdfminer.six
     'pdfminer.six[image]'
+    aspose-words
 )
 
 declare -a pip3packages=(
