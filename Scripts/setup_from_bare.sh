@@ -201,6 +201,8 @@ declare -a pippackages=(
     pdfkit 
     pywebcopy
     diagrams
+    pdfminer.six
+    'pdfminer.six[image]'
 )
 
 declare -a pip3packages=(
