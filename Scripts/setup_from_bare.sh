@@ -213,6 +213,7 @@ declare -a pip3packages=(
     glances
     glances[all]
     aiohttp
+    openleadr
 )
 
 echo "#####"
