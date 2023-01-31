@@ -98,11 +98,13 @@ declare -a aptpackages=(
     file 
     git 
     python3 
+    python3-setuptools 
+    python3-pip 
+    git
     inetutils-traceroute 
     net-tools
     wireless-tools 
     graphviz 
-    python3-pip  
     libgraphviz-dev 
     x11-apps 
     neofetch # Neofetch is a super-convenient command-line utility used to fetch system information
@@ -164,6 +166,7 @@ declare -a aptpackages=(
     stacer #Stacer is an open source system optimizer and application monitor that helps users to manage entire system
     zim # Zim is a graphical text editor used to maintain a collection of wiki pages
     zsh
+    libdbus-glib-1-2
 )
 
 declare -a rustpackages=(
@@ -392,8 +395,10 @@ for vscodeextension in "${vscodeextensions[@]}"; do
     echo ""
 done
     
-
-
+echo "install chat gpt"
+python3 -m pip install --user git+https://github.com/mmabrouk/chatgpt-wrapper
+playwright install firefox
+chatgpt install
 
 echo "###################"
 echo ""
