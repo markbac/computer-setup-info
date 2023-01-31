@@ -399,8 +399,8 @@ echo "install chat gpt"
 python3 -m pip install --user git+https://github.com/mmabrouk/chatgpt-wrapper
 playwright install firefox
 chatgpt install
-echo 'export PATH="$PATH:$HOME/.local/bin' >> ~/.bashrc
-echo 'export PATH="$PATH:$HOME/.local/bin' >> ~/.zshrc
+echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
+echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.zshrc
 
 echo "###################"
 echo ""
