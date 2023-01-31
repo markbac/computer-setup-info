@@ -402,6 +402,10 @@ chatgpt install
 echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
 echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.zshrc
 
+echo 'export PAGER="most"'  >> ~/.bashrc
+echo 'export PAGER="most"'  >> ~/.zshrc
+
+
 echo "###################"
 echo ""
 echo "SCRIPT COMPLETE!!"
