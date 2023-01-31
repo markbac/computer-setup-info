@@ -212,6 +212,7 @@ declare -a pippackages=(
 declare -a pip3packages=(
     glances
     glances[all]
+    aiohttp
 )
 
 echo "#####"
