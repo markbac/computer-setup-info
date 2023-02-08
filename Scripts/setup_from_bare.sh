@@ -191,6 +191,7 @@ declare -a rustpackages=(
     mdcat # Fancy cat for Markdown
     procs # A modern replacement for ps written in Rust
     topgrade # Upgrade all of your tools
+    cargo-update
 )
 
 declare -a fonts=(
