@@ -111,6 +111,8 @@ declare -a aptpackages=(
     graphviz 
     libgraphviz-dev 
     x11-apps 
+    vnstat # is a network utility for the Linux operating system
+    vnstati # The purpose of vnstati is to provide image output support for statistics collected using vnstat
     neofetch # Neofetch is a super-convenient command-line utility used to fetch system information
     wget # Wget is a command-line utility for downloading files from the web
     htop  # htop command in Linux system is a command line utility that allows the user to interactively monitor the system's vital resources
