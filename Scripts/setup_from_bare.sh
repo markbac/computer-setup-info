@@ -193,6 +193,7 @@ declare -a rustpackages=(
     topgrade # Upgrade all of your tools
     cargo-update
     trippy # A network diagnostic tool, inspired by mtr.
+    Jex # is an interactive tool for querying json files
 )
 
 declare -a fonts=(
