@@ -100,6 +100,7 @@ declare -a aptpackages=(
     python3 
     python3-setuptools 
     python3-pip 
+    pkg-config
     git
     inetutils-traceroute 
     net-tools
@@ -167,6 +168,7 @@ declare -a aptpackages=(
     zim # Zim is a graphical text editor used to maintain a collection of wiki pages
     zsh
     libdbus-glib-1-2
+    libncurses5-dev
 )
 
 declare -a rustpackages=(
@@ -176,6 +178,11 @@ declare -a rustpackages=(
     gitui # GitUI provides you with the comfort of a git GUI but right in your terminal
     webget # get files from websites
     macchina # Fast, minimal and customizable system information frontend.
+    eureka # is a CLI tool that allows you to quickly write down an idea using your preferred editor, and then have the idea committed and pushed to your idea git repository.
+    lsd # An ls with a lot of pretty colors and awesome icons
+    bat # another version of cat
+    Cherrybomb # A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
+    openapi-fuzzer # Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoints in order to find bugs.
 )
 
 declare -a fonts=(
