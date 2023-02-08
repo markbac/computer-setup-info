@@ -6,6 +6,8 @@ OS=$(uname -s)
 REV=$(uname -r)
 MACH=$(uname -m)
 
+start_time="$(date +%s)"
+
 export HISTIGNORE='*sudo -S*'
 
 echo "Please supply sudo password to script"
@@ -426,10 +428,14 @@ echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.zshrc
 echo 'export PAGER="most"'  >> ~/.bashrc
 echo 'export PAGER="most"'  >> ~/.zshrc
 
+end_time="$(date +%s)"
+
+run_time = $((end_time-start_time))
 
 echo "###################"
 echo ""
 echo "SCRIPT COMPLETE!!"
+echo "It took ${run_time} seconds!"
 echo ""
 echo "Please reboot (required for snapd to work) and run 2nd-stage-install.sh"
 echo ""
