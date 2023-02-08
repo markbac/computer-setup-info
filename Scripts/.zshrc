@@ -120,3 +120,5 @@ alias wthr='curl https://wttr.in/Man'
 alias hwthr='curl https://wttr.in/Blackburn'
 alias wthr='curl https://wttr.in/Manchester'
 alias starwars=' telnet towel.blinkenlights.nl'
+
+. "$HOME/.cargo/env"
