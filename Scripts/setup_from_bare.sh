@@ -183,6 +183,14 @@ declare -a rustpackages=(
     bat # another version of cat
     Cherrybomb # A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
     openapi-fuzzer # Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoints in order to find bugs.
+    bandwhich # Terminal bandwidth utilization tool
+    Broot # is another rust tool, through which you can navigate directories.
+    dua # "View disk space usage and delete unwanted data, fast."
+    mdBook # Create books from markdown files. 
+    lfs # A Linux utility to get information on filesystems; like df but better
+    mdcat # Fancy cat for Markdown
+    procs # A modern replacement for ps written in Rust
+    topgrade # Upgrade all of your tools
 )
 
 declare -a fonts=(
