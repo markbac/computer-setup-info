@@ -192,6 +192,7 @@ declare -a rustpackages=(
     procs # A modern replacement for ps written in Rust
     topgrade # Upgrade all of your tools
     cargo-update
+    trippy # A network diagnostic tool, inspired by mtr.
 )
 
 declare -a fonts=(
