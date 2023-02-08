@@ -92,6 +92,7 @@ declare -a vscodeextensions=(
 )
 
 declare -a aptpackages=(
+    nano
     build-essential 
     procps  # The Procps package provides programs to monitor and halt system processes.
     curl #curl is a command-line tool to transfer data to or from a server
