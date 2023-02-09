@@ -174,6 +174,15 @@ declare -a aptpackages=(
     zsh
     libdbus-glib-1-2
     libncurses5-dev
+    vnstat # is a network utility for the Linux operating system
+    vnstati # is used to produce graphical images representing the network traffic as graphs
+    slurm # Realtime network interface monitor
+    bmon # is a simple yet powerful, text-based network monitoring and debugging tool for Unix-like systems, which captures networking related statistics and displays them visually in a human friendly format
+    tcptrack # tcptrack displays the status of TCP connections that it sees on a given network interface. tcptrack monitors their state and displays information such as state, source/destination addresses and bandwidth usage in a sorted, updated list
+    speedometer # shows a graph of your current and past network speed in your console, letting you see your network connection’s up and downstream speed and history at a glance
+    cpu-x # is a Free software that gathers information on CPU, motherboard and more.
+    lshw # Hardware Lister (aka the lshw) command, is a small Linux utility that users can use to find out information about their hardware
+    hardinfo # is an easy-to-use Linux system info tool
 )
 
 declare -a rustpackages=(
