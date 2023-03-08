@@ -10,27 +10,26 @@ read ProvidedPasword
 
 declare -a snappackages=(
     core
-    bashtop
-    nutty
-    krita 
-    standard-notes
-    wekan 
-    onefetch 
-    fast 
-    nap-store
-    imagenes
-    sublime-text
-    pycharm-community --classic
-    sublime-text --classic
-    notepadqq
-    bottom
-    mqtt-explorer
-    osquitto
-    redis
-    mapscii
-    asciiquarium
-    simplenote
-    joplin
+    bashtop # Bashtop is a terminal-based resource monitoring utility in Linux
+    nutty # A simple application to provide essential information on network related aspects. 
+    krita # Krita is the full-featured digital art studio.
+    standard-notes # An end-to-end encrypted notes app for digitalists and professionals.
+    wekan # Wekan is an open-source and collaborative kanban board application.
+    onefetch # Onefetch is a command-line Git information tool written in Rust that displays project information and code statistics for a local Git repository directly to your terminal.
+    fast # test your internet download speed from terminal
+    snap-store
+    sublime-text # editor
+    pycharm-community --classic # Python IDE
+    sublime-text --classic # editor
+    notepadqq # A Notepad++-like editor for Linux.
+    bottom # A graphical process/system monitor with a customizable interface
+    mqtt-explorer # A comprehensive and easy to use MQTT Client
+    mosquitto # Eclipse Mosquitto MQTT broker
+    redis # Redis is used as a database, cache and message broker.
+    mapscii # ascii map
+    asciiquarium # ascii aquarium
+    simplenote # Simplenote is an easy way to keep notes, lists, ideas and more. 
+    joplin # Joplin is an open source, free note taking application.
 )
 
 declare -a npmpackages=(
