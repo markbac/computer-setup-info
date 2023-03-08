@@ -99,6 +99,7 @@ declare -a aptpackages=(
     procps  # The Procps package provides programs to monitor and halt system processes.
     curl #curl is a command-line tool to transfer data to or from a server
     file 
+    cmake
     git 
     python3 
     python3-setuptools 
