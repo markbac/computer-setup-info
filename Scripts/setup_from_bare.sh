@@ -209,6 +209,7 @@ declare -a rustpackages=(
     cargo-update
     trippy # A network diagnostic tool, inspired by mtr.
     Jex # is an interactive tool for querying json files
+    onefetch
 )
 
 declare -a fonts=(
