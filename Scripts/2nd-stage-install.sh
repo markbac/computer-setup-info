@@ -55,6 +55,9 @@ for snappackage in "${snappackages[@]}"; do
     echo ""
 done
     
+echo "install Gaphor"
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install --user flathub org.gaphor.Gaphor
 
 echo "npm installs"
 #install nvm
