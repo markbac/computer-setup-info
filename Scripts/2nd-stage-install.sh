@@ -55,7 +55,7 @@ for snappackage in "${snappackages[@]}"; do
     echo ""
 done
     
-echo "install Gaphor"
+echo "install Gaphor -  Describe and document your applications and systems with Gaphor to enhance knowledge sharing"
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install --user flathub org.gaphor.Gaphor
 
