@@ -214,7 +214,8 @@ declare -a rustpackages=(
     kanorg # KanOrg allows you easily organize all your tasks from the terminal. https://lib.rs/crates/kanorg
     ttdl # terminal todo list
     total-recall # Application with GUI for keeping a to-do list.
-    
+    pask # a personal task manager for the command line.
+    task-picker #Task Picker helps you to keep an overview about tasks from different task trackers, like GitHub or CalDAV.
 )
 
 declare -a fonts=(
