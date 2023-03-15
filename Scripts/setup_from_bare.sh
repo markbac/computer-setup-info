@@ -210,7 +210,10 @@ declare -a rustpackages=(
     trippy # A network diagnostic tool, inspired by mtr.
     Jex # is an interactive tool for querying json files
     onefetch
-    cargo-bundle # Wrap Rust executables in OS-specific app bundles
+    rust-kanban # Kanban App for the terminal written in rust. This kanban app will allow the user to be more productive by prioritizing tasks and achieving goals faster
+    kanorg # KanOrg allows you easily organize all your tasks from the terminal. https://lib.rs/crates/kanorg
+    
+    
     
 )
 
