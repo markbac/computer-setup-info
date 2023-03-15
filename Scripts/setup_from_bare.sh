@@ -184,6 +184,10 @@ declare -a aptpackages=(
     cpu-x # is a Free software that gathers information on CPU, motherboard and more.
     lshw # Hardware Lister (aka the lshw) command, is a small Linux utility that users can use to find out information about their hardware
     hardinfo # is an easy-to-use Linux system info tool
+    texlive-latex-base # install pdf latex to create latex docs
+    texlive-fonts-recommended 
+    texlive-fonts-extra 
+    texlive-latex-extra
 )
 
 declare -a rustpackages=(
