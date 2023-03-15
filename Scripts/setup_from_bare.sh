@@ -210,6 +210,8 @@ declare -a rustpackages=(
     trippy # A network diagnostic tool, inspired by mtr.
     Jex # is an interactive tool for querying json files
     onefetch
+    cargo-bundle # Wrap Rust executables in OS-specific app bundles
+    
 )
 
 declare -a fonts=(
