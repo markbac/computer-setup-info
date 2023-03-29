@@ -107,6 +107,37 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+MY_TOOLS="
+  gitui     - terminal git ui
+  topgrade  - detects which tools you use and runs the appropriate commands to update them 
+              use  'topgrade --disable' gcloud to skip GCP cli
+  exa       - modern replacement for ls
+  bottom    - customizable cross-platform graphical process/system monitor for the terminal
+  broot     - tool through which you can navigate directories
+  lsd       - an ls with a lot of pretty colors and awesome icons
+  md        - cross-platform orthodox file manager
+  ncdu      - useful and convenient way to view disk usage
+  bmon      - text-based network monitoring and debugging tool for Unix-like systems
+  dust      - alternative to the Linux du command
+  xplr      - terminal files explorer
+  onefetch  - command-line Git information tool that displays project 
+              information and code statistics for a local Git repository
+  bashtop   - terminal-based resource monitoring utility in Linux
+  mapscii   - ascii map
+  wthr      - local weather using 'curl https://wttr.in/Manchester'
+  hwthr     - home weather
+  neofetch  - display system information
+  htop      - interactively monitor the system's vital resources
+  tree      - command-line program used to recursively list or display the content of a directory 
+              in a tree-like format  
+  screenfetch  - display system information
+  bpytop    - terminal resource monitor
+  jp2a      - jpeg to ascii
+  macchina  - system information
+  bandwhich - Terminal bandwidth utilization tool
+  dua        - View disk space usage and delete unwanted data, fast
+"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias ll='ls -alF'
@@ -116,9 +147,14 @@ alias lls='ls -la --sort=size'
 alias llt='ls -la --sort=time'
 alias cls='clear'
 alias h='history'
-alias wthr='curl https://wttr.in/Man'
 alias hwthr='curl https://wttr.in/Blackburn'
 alias wthr='curl https://wttr.in/Manchester'
 alias starwars=' telnet towel.blinkenlights.nl'
+alias tools='echo $MY_TOOLS'
+#export PAGER="most"
+export PATH="$PATH:$HOME/.local/bin"
 
 . "$HOME/.cargo/env"
+
+source /home/mbacon/.config/broot/launcher/bash/br
+
