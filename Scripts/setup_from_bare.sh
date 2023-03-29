@@ -119,7 +119,7 @@ declare -a aptpackages=(
     htop  # htop command in Linux system is a command line utility that allows the user to interactively monitor the system's vital resources
     bat # Say hello to bat Linux command, which is a cat command written in Rust programming language
     tree  # The tree is a tiny, cross-platform command-line program used to recursively list or display the content of a directory in a tree-like format
-    gccgo-go # The gccgo command may be used to compile Go source code into an object file, link a collection of object files together, or do both in sequence
+    #gccgo-go # The gccgo command may be used to compile Go source code into an object file, link a collection of object files together, or do both in sequence
     nmon # Nigel's Monitor ( nmon ) is a system performance monitoring tool 
     atop # The atop command is a tool for monitoring system resources in Linux
     nodejs  
@@ -144,10 +144,10 @@ declare -a aptpackages=(
     dolphin  # Dolphin is a free and open source file manager included in the KDE Applications bundle
     gnome-system-monitor 
     flatpak  # Flatpak, formerly known as xdg-app, is a utility for software deployment and package management for Linux.
-    python3-sense-emu # This is the Python 3 version of the Sense HAT Emulator library.
-    sense-emu-tools
-    geany # Geany is a free and open-source lightweight GUI text editor using Scintilla and GTK, including basic IDE features. 
-    vlc 
+    #python3-sense-emu # This is the Python 3 version of the Sense HAT Emulator library.
+    #sense-emu-tools
+    #geany # Geany is a free and open-source lightweight GUI text editor using Scintilla and GTK, including basic IDE features. 
+    #vlc 
     gimp
     python3-tk 
     thonny # Thonny, Python IDE for beginners
@@ -166,12 +166,12 @@ declare -a aptpackages=(
     most # most is a terminal pager program on Unix, OpenVMS, MS-DOS, Windows and Unix-like systems used to view (but not change) the contents of a text file one screen at a time.
     aview # Aview is a high quality ASCII art image viewer
     mc # GNU Midnight Commander is a free cross-platform orthodox file manager
-    wordgrinder # WordGrinder is a word processing application for the unix terminal or Windows console
+    #wordgrinder # WordGrinder is a word processing application for the unix terminal or Windows console
     chafa # hafa is a command-line utility that converts image data, including animated GIFs, into graphics formats or ANSI/Unicode character art suitable for display in a terminal. 
-    googler # googler is a power tool to Google (web, news, videos and site search) from the command-line.
+    #googler # googler is a power tool to Google (web, news, videos and site search) from the command-line.
     ncdu # The ncdu command provides a useful and convenient way to view disk usage.
     stacer #Stacer is an open source system optimizer and application monitor that helps users to manage entire system
-    zim # Zim is a graphical text editor used to maintain a collection of wiki pages
+    #zim # Zim is a graphical text editor used to maintain a collection of wiki pages
     zsh
     libdbus-glib-1-2
     libncurses5-dev
@@ -222,24 +222,24 @@ declare -a rustpackages=(
 )
 
 declare -a fonts=(
-    BitstreamVeraSansMono
-    CodeNewRoman
-    DroidSansMono
-    FiraCode
-    FiraMono
-    Go-Mono
-    Hack
-    Hermit
-    JetBrainsMono
+    #BitstreamVeraSansMono
+    #CodeNewRoman
+    #DroidSansMono
+    #FiraCode
+    #FiraMono
+    #Go-Mono
+    #Hack
+    #Hermit
+    #JetBrainsMono
     Meslo
-    Noto
-    Overpass
-    ProggyClean
-    RobotoMono
-    SourceCodePro
-    SpaceMono
-    Ubuntu
-    UbuntuMono
+    #Noto
+    #Overpass
+    #ProggyClean
+    #RobotoMono
+    #SourceCodePro
+    #SpaceMono
+    #Ubuntu
+    #UbuntuMono
 )
 
 declare -a pippackages=(
