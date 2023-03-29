@@ -139,10 +139,10 @@ declare -a aptpackages=(
     gnupg 
     snapd # Snap is a software packaging and deployment system developed by Canonical for operating systems that use the Linux kernel and the systemd init system
     libssl-dev 
-    nedit # NEdit, the Nirvana editor, is a text editor and source code editor for the X Window System
-    emacs # Emacs, originally named EMACS, is a family of text editors that are characterized by their extensibility.
-    dolphin  # Dolphin is a free and open source file manager included in the KDE Applications bundle
-    gnome-system-monitor 
+    #nedit # NEdit, the Nirvana editor, is a text editor and source code editor for the X Window System
+    #emacs # Emacs, originally named EMACS, is a family of text editors that are characterized by their extensibility.
+    #dolphin  # Dolphin is a free and open source file manager included in the KDE Applications bundle
+    #gnome-system-monitor 
     flatpak  # Flatpak, formerly known as xdg-app, is a utility for software deployment and package management for Linux.
     #python3-sense-emu # This is the Python 3 version of the Sense HAT Emulator library.
     #sense-emu-tools
@@ -150,7 +150,7 @@ declare -a aptpackages=(
     #vlc 
     gimp
     python3-tk 
-    thonny # Thonny, Python IDE for beginners
+    #thonny # Thonny, Python IDE for beginners
     psmisc # The Psmisc package contains three programs which help manage the /proc directory. Installed programs: fuser, killall and pstree
     bpytop  # he bpytop is an awesome resource monitor (disk, network, process, CPU) Linux, macOS, FreeBSD, and Unix-like system written in Python 3.
     software-properties-common 
