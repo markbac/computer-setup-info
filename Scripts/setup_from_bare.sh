@@ -112,6 +112,12 @@ declare -a aptpackages=(
     graphviz 
     libgraphviz-dev 
     x11-apps 
+    libxcb1-dev
+    libxcb-render0-dev
+    libxcb-shape0-dev
+    libxcb-xfixes0-dev
+    libdbus-glib-1-2
+    libncurses5-dev
     vnstat # is a network utility for the Linux operating system
     vnstati # The purpose of vnstati is to provide image output support for statistics collected using vnstat
     neofetch # Neofetch is a super-convenient command-line utility used to fetch system information
@@ -173,8 +179,6 @@ declare -a aptpackages=(
     stacer #Stacer is an open source system optimizer and application monitor that helps users to manage entire system
     #zim # Zim is a graphical text editor used to maintain a collection of wiki pages
     zsh
-    libdbus-glib-1-2
-    libncurses5-dev
     vnstat # is a network utility for the Linux operating system
     vnstati # is used to produce graphical images representing the network traffic as graphs
     slurm # Realtime network interface monitor
