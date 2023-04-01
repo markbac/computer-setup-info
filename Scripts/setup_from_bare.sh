@@ -257,6 +257,7 @@ declare -a pippackages=(
     adr-tools-python # tools to manage ADR (Architecture Design records)
     adr-viewer # Show off your Architecture Decision Records with an easy-to-navigate web page, either as a local web-server or generated static content
     pyadr # CLI to help with an ADR process lifecycle (proposal/acceptance/rejection/ deprecation/superseding) based on markdown files and git.
+    pymypdf
 )
 
 declare -a pip3packages=(
