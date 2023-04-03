@@ -118,6 +118,7 @@ declare -a aptpackages=(
     libxcb-xfixes0-dev
     libdbus-glib-1-2
     libncurses5-dev
+    mate-terminal # terminal app, can be used in chromeos so you have nerd fonts
     vnstat # is a network utility for the Linux operating system
     vnstati # The purpose of vnstati is to provide image output support for statistics collected using vnstat
     neofetch # Neofetch is a super-convenient command-line utility used to fetch system information
