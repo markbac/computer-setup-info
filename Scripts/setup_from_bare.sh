@@ -154,7 +154,7 @@ declare -a aptpackages=(
     #sense-emu-tools
     #geany # Geany is a free and open-source lightweight GUI text editor using Scintilla and GTK, including basic IDE features. 
     #vlc 
-    gimp
+    #gimp
     python3-tk 
     #thonny # Thonny, Python IDE for beginners
     psmisc # The Psmisc package contains three programs which help manage the /proc directory. Installed programs: fuser, killall and pstree
@@ -188,10 +188,10 @@ declare -a aptpackages=(
     cpu-x # is a Free software that gathers information on CPU, motherboard and more.
     lshw # Hardware Lister (aka the lshw) command, is a small Linux utility that users can use to find out information about their hardware
     hardinfo # is an easy-to-use Linux system info tool
-    texlive-latex-base # install pdf latex to create latex docs
-    texlive-fonts-recommended 
-    texlive-fonts-extra 
-    texlive-latex-extra
+    #texlive-latex-base # install pdf latex to create latex docs
+    #texlive-fonts-recommended 
+    #texlive-fonts-extra 
+    #texlive-latex-extra
 )
 
 declare -a rustpackages=(
@@ -236,11 +236,11 @@ declare -a fonts=(
     #Hermit
     #JetBrainsMono
     Meslo
-    #Noto
+    Noto
     #Overpass
     #ProggyClean
-    #RobotoMono
-    #SourceCodePro
+    RobotoMono
+    SourceCodePro
     #SpaceMono
     #Ubuntu
     #UbuntuMono
