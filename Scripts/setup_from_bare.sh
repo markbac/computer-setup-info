@@ -204,8 +204,8 @@ declare -a rustpackages=(
     eureka # is a CLI tool that allows you to quickly write down an idea using your preferred editor, and then have the idea committed and pushed to your idea git repository.
     lsd # An ls with a lot of pretty colors and awesome icons
     bat # another version of cat
-    Cherrybomb # A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
-    openapi-fuzzer # Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoints in order to find bugs.
+    #Cherrybomb # A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
+    #openapi-fuzzer # Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoints in order to find bugs.
     bandwhich # Terminal bandwidth utilization tool
     Broot # is another rust tool, through which you can navigate directories.
     dua # "View disk space usage and delete unwanted data, fast."
