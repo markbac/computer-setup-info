@@ -207,7 +207,7 @@ declare -a rustpackages=(
     #Cherrybomb # A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
     #openapi-fuzzer # Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoints in order to find bugs.
     bandwhich # Terminal bandwidth utilization tool
-    Broot # is another rust tool, through which you can navigate directories.
+    broot # is another rust tool, through which you can navigate directories.
     dua # "View disk space usage and delete unwanted data, fast."
     mdBook # Create books from markdown files. 
     lfs # A Linux utility to get information on filesystems; like df but better
@@ -216,7 +216,7 @@ declare -a rustpackages=(
     topgrade # Upgrade all of your tools
     cargo-update
     trippy # A network diagnostic tool, inspired by mtr.
-    Jex # is an interactive tool for querying json files
+    #jex # is an interactive tool for querying json files
     onefetch
     rust-kanban # Kanban App for the terminal written in rust. This kanban app will allow the user to be more productive by prioritizing tasks and achieving goals faster
     kanorg # KanOrg allows you easily organize all your tasks from the terminal. https://lib.rs/crates/kanorg
