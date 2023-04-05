@@ -211,6 +211,7 @@ declare -a rustpackages=(
     broot # is another rust tool, through which you can navigate directories.
     dua # "View disk space usage and delete unwanted data, fast."
     mdbook # Create books from markdown files. 
+    mdbook-pdf
     lfs # A Linux utility to get information on filesystems; like df but better
     mdcat # Fancy cat for Markdown
     procs # A modern replacement for ps written in Rust
