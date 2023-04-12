@@ -104,6 +104,7 @@ declare -a aptpackages=(
     python3 
     python3-setuptools 
     python3-pip 
+    dotnet-sdk-6.0  
     pkg-config
     git
     inetutils-traceroute 
