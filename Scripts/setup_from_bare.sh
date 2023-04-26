@@ -262,6 +262,7 @@ declare -a pippackages=(
     adr-viewer # Show off your Architecture Decision Records with an easy-to-navigate web page, either as a local web-server or generated static content
     pyadr # CLI to help with an ADR process lifecycle (proposal/acceptance/rejection/ deprecation/superseding) based on markdown files and git.
     pymypdf
+    aafigure # convert ascii art to image
 )
 
 declare -a pip3packages=(
