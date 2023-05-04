@@ -41,6 +41,7 @@ declare -a npmpackages=(
     @ungit
     vtop
     gtop
+    create-openapi-repo
 )
 
 echo "#####"
