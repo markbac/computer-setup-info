@@ -91,6 +91,9 @@ git clone git@github.com:swagger-api/swagger-editor.git
 cd swagger-editor
 npm install
 
+flatpak install flathub org.wezfurlong.wezterm
+alias wezterm='flatpak run org.wezfurlong.wezterm'
+
 
 
 echo "###################"
