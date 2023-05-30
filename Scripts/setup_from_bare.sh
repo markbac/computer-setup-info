@@ -227,6 +227,8 @@ declare -a rustpackages=(
     ttdl # terminal todo list
     pask # a personal task manager for the command line.
     task-picker #Task Picker helps you to keep an overview about tasks from different task trackers, like GitHub or CalDAV.
+    todo-bin # todo cli
+    rink # unit conversion
 )
 
 declare -a fonts=(
