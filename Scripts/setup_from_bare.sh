@@ -233,6 +233,7 @@ declare -a rustpackages=(
     todo-bin # todo cli
     rink # unit conversion
     alacritty # Terminal
+    rh # http cli client
 )
 
 declare -a fonts=(
