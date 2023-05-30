@@ -87,6 +87,12 @@ for npmpackage in "${npmpackages[@]}"; do
     echo ""
 done
 
+## install brew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/$USER/.bashrc
+
+#install nushell
+brew install nushell
 
 ## open api editor https://github.com/swagger-api/swagger-editor 
 git clone git@github.com:swagger-api/swagger-editor.git
