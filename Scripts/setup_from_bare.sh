@@ -119,6 +119,9 @@ declare -a aptpackages=(
     libxcb-xfixes0-dev
     libdbus-glib-1-2
     libncurses5-dev
+    libfreetype6-dev
+    libfontconfig1-dev 
+    libxkbcommon-dev
     mate-terminal # terminal app, can be used in chromeos so you have nerd fonts
     vnstat # is a network utility for the Linux operating system
     vnstati # The purpose of vnstati is to provide image output support for statistics collected using vnstat
@@ -229,6 +232,7 @@ declare -a rustpackages=(
     task-picker #Task Picker helps you to keep an overview about tasks from different task trackers, like GitHub or CalDAV.
     todo-bin # todo cli
     rink # unit conversion
+    alacritty # Terminal
 )
 
 declare -a fonts=(
