@@ -58,7 +58,9 @@ done
     
 echo "install Gaphor -  Describe and document your applications and systems with Gaphor to enhance knowledge sharing"
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install --user flathub org.gaphor.Gaphor
+flatpak install -y --user flathub org.gaphor.Gaphor
+
+flatpak install -y flathub dev.lapce.lapce
 
 echo "npm installs"
 #install nvm
