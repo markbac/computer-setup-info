@@ -251,6 +251,7 @@ declare -a fonts=(
 )
 
 declare -a pippackages=(
+    wheel
     erd-from-json-table-schema 
     pdfkit 
     pywebcopy
@@ -263,6 +264,7 @@ declare -a pippackages=(
     pyadr # CLI to help with an ADR process lifecycle (proposal/acceptance/rejection/ deprecation/superseding) based on markdown files and git.
     pymypdf
     aafigure # convert ascii art to image
+    httpie
 )
 
 declare -a pip3packages=(
