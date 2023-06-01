@@ -6,6 +6,10 @@ This Repo contains some scripts to autimate setup of a Linux environment with my
 
 ## Chromebook
 
-To reset/set password
+### To reset/set password
 
 1) sudo passwd 
+
+### vscode
+
+https://code.visualstudio.com/Download Get the Arm64 version
