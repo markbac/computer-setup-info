@@ -18,7 +18,7 @@ https://code.visualstudio.com/Download Get the Arm64 version
 
 The .wslconfig will be stored in teh users HOME directory
 
-''' 
+```
 # Settings apply across all Linux distros running on WSL 2
 [wsl2]
 
@@ -27,4 +27,4 @@ memory=8GB
 
 # Sets the VM to use two virtual processors
 processors=3
-'''
+```
