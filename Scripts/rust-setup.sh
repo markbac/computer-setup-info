@@ -41,6 +41,7 @@ declare -a rustpackages=(
     rink # unit conversion
     alacritty # Terminal
     rh # http cli client
+    notes-cli # A simple note taking CLI https://github.com/wez470/notes-cli
 )
 
 echo "Install rust"
