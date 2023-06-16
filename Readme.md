@@ -10,7 +10,7 @@ This Repo contains some scripts to automate setup of a Linux environment with my
 
 - [mdSilo](https://github.com/mdSilo/mdSilo-app/releases)
 - [noted = scripted note taking based on markdown](https://github.com/scottashipp/noted)
-  -[Also see - My Note Taking Process ](https://dev.to/scottshipp/my-note-taking-process-49pa) 
+  - [Also see - My Note Taking Process ](https://dev.to/scottshipp/my-note-taking-process-49pa) 
 
 ## OS Specific
 
