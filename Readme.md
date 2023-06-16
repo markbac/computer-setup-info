@@ -1,20 +1,32 @@
 # Linux 
 
-## Scripts
+## Intro
 
-This Repo contains some scripts to autimate setup of a Linux environment with my preferences and apps.
+This Repo contains some scripts to automate setup of a Linux environment with my preferences and apps. It also has instructions for other tools etc that I may wish to use
 
-## Chromebook
+## General
 
-### To reset/set password
+### Useful tools that are easy to script install
+
+- [mdSilo](https://github.com/mdSilo/mdSilo-app/releases)
+- [noted = scripted note taking based on markdown](https://github.com/scottashipp/noted)
+  -[Also see - My Note Taking Process ](https://dev.to/scottshipp/my-note-taking-process-49pa) 
+
+## OS Specific
+
+### Chromebook
+
+#### To reset/set password
 
 1) sudo passwd 
 
-### vscode
+#### vscode
 
 https://code.visualstudio.com/Download Get the Arm64 version
 
-## WSL Config
+### Windows
+
+#### WSL Config
 
 The .wslconfig will be stored in teh users HOME directory
 
