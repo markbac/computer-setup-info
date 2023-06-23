@@ -94,6 +94,9 @@ done
 #install nushell
 brew install nushell
 
+# install vacuum https://quobix.com/vacuum/
+brew install daveshanley/vacuum/vacuum 
+
 ## open api editor https://github.com/swagger-api/swagger-editor 
 git clone git@github.com:swagger-api/swagger-editor.git
 cd swagger-editor
