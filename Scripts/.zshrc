@@ -136,6 +136,10 @@ MY_TOOLS="
   macchina  - system information
   bandwhich - Terminal bandwidth utilization tool
   dua        - View disk space usage and delete unwanted data, fast
+  tokei     - displays statistics about your code
+  todo-bin  - cli todo
+  notes     - A small CLI note taking tool with your favorite editor see notes --help
+  vacuum    - OpenAPI linter https://quobix.com/vacuum/
 "
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -151,10 +155,19 @@ alias hwthr='curl https://wttr.in/Blackburn'
 alias wthr='curl https://wttr.in/Manchester'
 alias starwars=' telnet towel.blinkenlights.nl'
 alias tools='echo $MY_TOOLS'
-#export PAGER="most"
+
+export PAGER="most"
+
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:/snap/bin"
+export PATH="$PATH:/home/mbacon/go/bin"
+
+export NOTES_CLI_HOME="/home/mbacon/OneDrive/WorkRepos/notes"
+export NOTES_CLI_EDITOR=nano # Set your favorite editor
 
 . "$HOME/.cargo/env"
 
 source /home/mbacon/.config/broot/launcher/bash/br
 
+#. /home/mbacon/mouse.zsh
+#zle-toggle-mouse
