@@ -24,6 +24,8 @@ declare -a rustpackages=(
     mdbook # Create books from markdown files. 
     mdbook-pdf
     mdbook-plantuml
+    mdbook-codeblocks
+    mdbook-mermaid
     lfs # A Linux utility to get information on filesystems; like df but better
     mdcat # Fancy cat for Markdown
     procs # A modern replacement for ps written in Rust
