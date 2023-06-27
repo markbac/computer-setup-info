@@ -110,6 +110,7 @@ declare -a aptpackages=(
     #texlive-fonts-recommended 
     #texlive-fonts-extra 
     #texlive-latex-extra
+    plantuml
 )
 
 echo "apt update"
