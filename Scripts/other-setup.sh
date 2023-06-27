@@ -33,4 +33,7 @@ else
 fi
 echo $ProvidedPasword | sudo -S  chmod +x /usr/local/bin/ctop
 
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt -y install ./google-chrome-stable_current_amd64.deb
+
 go install github.com/nikitavoloboev/gitupdate@latest
