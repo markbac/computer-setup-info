@@ -22,6 +22,7 @@ declare -a pippackages=(
     aafigure # convert ascii art to image
     httpie
     markdown
+    mdbook-pdf-outline
 )
 
 declare -a pip3packages=(
