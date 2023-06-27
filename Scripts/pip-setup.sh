@@ -21,6 +21,7 @@ declare -a pippackages=(
     pymypdf
     aafigure # convert ascii art to image
     httpie
+    markdown
 )
 
 declare -a pip3packages=(
