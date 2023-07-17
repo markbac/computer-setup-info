@@ -12,6 +12,21 @@ This Repo contains some scripts to automate setup of a Linux environment with my
 - [noted = scripted note taking based on markdown](https://github.com/scottashipp/noted)
   - [Also see - My Note Taking Process ](https://dev.to/scottshipp/my-note-taking-process-49pa) 
 
+### nushell
+``` sh
+brew install nushell
+```
+``` sh
+nano /home/mbacon/.config/nushell/config.nu
+```
+let-env PROMPT_COMMAND = { oh-my-posh --config ~/.poshthemes/M365Princess.omp.json }
+
+#### oh my posh
+``` sh
+brew install jandedobbeleer/oh-my-posh/oh-my-posh
+```
+
+
 ## OS Specific
 
 ### Chromebook
