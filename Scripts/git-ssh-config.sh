@@ -7,7 +7,7 @@ REV=$(uname -r)
 MACH=$(uname -m)
 
 echo "set up ssh"
-ssh-keygen -t ed25519 -C "mark.bacon@landisgyr.com"
+ssh-keygen -t ed25519 -C "mark@bacon.me.uk"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 cat ~/.ssh/id_ed25519.pub
