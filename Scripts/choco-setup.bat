@@ -18,9 +18,11 @@ docker-desktop ^
 cascadiafonts ^
 firacode ^
 googlechrome ^
+microsoft-edge ^
 opera ^
 firefox ^
 7zip.install ^
+7zip ^
 powertoys ^
 irfanview ^
 irfanviewplugins ^
@@ -34,6 +36,24 @@ adobereader ^
 gimp ^
 paint.net ^
 sysinternals ^
+zoom ^
+choco install microsoft-teams-new-bootstrapper ^
+drawio ^
+python3 ^
+googledrive ^
+foxitreader ^
+ccleaner ^
+treesizefree ^
+windirstat ^
+winscp ^
+dotnet ^
+synology-note-station-client ^
+synologydrive ^
+cloudstation ^
+oh-my-posh ^
+winmerge ^
+tortoisegit ^
+sourcemonitor ^
 putty"
 
 echo Installing Chocolatey packages
