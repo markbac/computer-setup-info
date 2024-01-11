@@ -10,62 +10,19 @@ if %errorlevel% neq 0 (
 )
 
 :: List of packages to install using Chocolatey
-set "chocopackages=powershell-core ^
-microsoft-windows-terminal ^
-git ^
-vscode ^
-docker-desktop ^
-cascadiafonts ^
-firacode ^
-googlechrome ^
-microsoft-edge ^
-opera ^
-firefox ^
-7zip.install ^
-7zip ^
-powertoys ^
-irfanview ^
-irfanviewplugins ^
-notepadplusplus ^
-vlc ^
-bulkrenameutility ^
-wsl ^
-wsl-ubuntu-2204 ^
-rust ^
-adobereader ^
-gimp ^
-paint.net ^
-sysinternals ^
-zoom ^
-choco install microsoft-teams-new-bootstrapper ^
-drawio ^
-python3 ^
-googledrive ^
-foxitreader ^
-ccleaner ^
-treesizefree ^
-windirstat ^
-winscp ^
-dotnet ^
-synology-note-station-client ^
-synologydrive ^
-cloudstation ^
-oh-my-posh ^
-winmerge ^
-tortoisegit ^
-sourcemonitor ^
-putty"
+set "chocopackages=powershell-core microsoft-windows-terminal git vscode docker-desktop cascadiafonts firacode googlechrome microsoft-edge opera firefox 7zip.install 7zip powertoys irfanview irfanviewplugins notepadplusplus vlc bulkrenameutility wsl wsl-ubuntu-2204 rust adobereader gimp paint.net sysinternals zoom microsoft-teams-new-bootstrapper drawio python3 googledrive foxitreader ccleaner treesizefree windirstat winscp dotnet synology-note-station-client synologydrive cloudstation oh-my-posh winmerge tortoisegit sourcemonitor putty"
 
 echo Installing Chocolatey packages
 
 :: Update Chocolatey itself
-choco upgrade chocolatey -y
+choco upgrade -y chocolatey
 
 :: Loop through the list of packages and install them
+echo Installing list of packages
 for %%a in (%chocopackages%) do (
     echo.
     echo Installing %%a
-    echo choco install -y %%a
+    choco install -y %%a
     echo.
 )
 
