@@ -2,7 +2,7 @@
 SETLOCAL
 
 :: Define a list of Scoop packages to install
-SET PACKAGES=topgrade git vim
+SET PACKAGES=topgrade 
 
 :: Check if Scoop is installed by trying to get its version
 powershell -command "scoop --version" > nul 2>&1
