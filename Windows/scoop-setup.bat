@@ -8,8 +8,8 @@ SET PACKAGES=topgrade git vim
 powershell -command "scoop --version" > nul 2>&1
 IF %ERRORLEVEL% NEQ 0 (
     ECHO Scoop is not installed. Installing Scoop...
-    powershell -command "Set-ExecutionPolicy RemoteSigned -scope CurrentUser"
-    powershell -command "Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')"
+    powershell -command "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser"
+    powershell -command "IInvoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression"
 ) ELSE (
     ECHO Scoop is already installed.
 )
