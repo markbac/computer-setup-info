@@ -10,7 +10,7 @@ if %errorlevel% neq 0 (
 )
 
 :: List of packages to install using Chocolatey
-set "vlc curl wireshark bluescreenview libreoffice-fresh whocrashed chocopackages=powershell-core microsoft-windows-terminal git vscode docker-desktop cascadiafonts firacode googlechrome microsoft-edge opera firefox 7zip.install 7zip powertoys irfanview irfanviewplugins notepadplusplus vlc bulkrenameutility wsl2 wsl-ubuntu-2204 rust adobereader gimp paint.net sysinternals zoom microsoft-teams-new-bootstrapper drawio python3 googledrive foxitreader ccleaner treesizefree windirstat winscp dotnet synology-note-station-client synologydrive cloudstation oh-my-posh winmerge tortoisegit sourcemonitor putty graphviz llvm choco install sonos-controller googleearthpro whatsapp openvpn onenote vnc-viewer obs-studio cppcheck gh miktex xnview speccy nano plantuml hwmonitor nodejs nvm"
+set "chocopackages=powershell-core vlc curl wireshark bluescreenview libreoffice-fresh whocrashed microsoft-windows-terminal git vscode docker-desktop cascadiafonts firacode googlechrome microsoft-edge opera firefox 7zip.install 7zip powertoys irfanview irfanviewplugins notepadplusplus vlc bulkrenameutility wsl2 wsl-ubuntu-2204 rust adobereader gimp paint.net sysinternals zoom microsoft-teams-new-bootstrapper drawio python3 googledrive foxitreader ccleaner treesizefree windirstat winscp dotnet synology-note-station-client synologydrive cloudstation oh-my-posh winmerge tortoisegit sourcemonitor putty graphviz llvm choco install sonos-controller googleearthpro whatsapp openvpn onenote vnc-viewer obs-studio cppcheck gh miktex xnview speccy nano plantuml hwmonitor nodejs nvm"
 
 echo Installing Chocolatey packages
 
