@@ -30,6 +30,7 @@ declare -a snappackages=(
     asciiquarium # ascii aquarium
     simplenote # Simplenote is an easy way to keep notes, lists, ideas and more. 
     joplin # Joplin is an open source, free note taking application.
+    dbgate # db client
 )
 
 declare -a npmpackages=(
