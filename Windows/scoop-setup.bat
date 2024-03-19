@@ -2,7 +2,7 @@
 SETLOCAL
 
 :: Define a list of Scoop packages to install
-set "chocopackages=topgrade macchina lsd broot dua trippy "
+set "chocopackages=topgrade macchina lsd broot dua neofetch "
 
 :: Check if Scoop is installed by trying to get its version
 powershell -command "scoop --version" > nul 2>&1

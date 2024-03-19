@@ -19,6 +19,8 @@ declare -a brewpackages=(
     topgrade
     procs
     trippy
+    macchina
+    xplr
 )
 
 declare -a snappackages=(
@@ -45,7 +47,6 @@ declare -a snappackages=(
     joplin # Joplin is an open source, free note taking application.
     dbgate # db client
     bottom
-    macchina
     alacritty
     xplr
     git-delta
@@ -69,7 +70,7 @@ for snappackage in "${snappackages[@]}"; do
     echo "#####"
     echo ""
     echo "Installing ${snappackage}"
-    echo $ProvidedPasword | sudo -S snap install ${snappackage}
+    #echo $ProvidedPasword | sudo -S snap install ${snappackage}
     echo ""
     echo "#####"
     echo ""
@@ -82,7 +83,7 @@ flatpak install -y --user flathub org.gaphor.Gaphor
 flatpak install -y flathub dev.lapce.lapce
 
 echo "npm installs"
-#install nvm
+install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash 
 
 export NVM_DIR="$HOME/.nvm"
@@ -112,7 +113,7 @@ done
 
 echo "#####"
 echo "Install brew packages"
-for npmpackage in "${brewpackages[@]}"; do
+for brewpackages in "${brewpackages[@]}"; do
     echo "#####"
     echo ""
     echo "Installing ${brewpackages}"

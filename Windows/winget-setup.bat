@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 
 
 :: List of packages to install using Chocolatey
-set "wingetpackages=procs"
+set "wingetpackages=procs trippy"
 
 echo Installing winget packages
 
