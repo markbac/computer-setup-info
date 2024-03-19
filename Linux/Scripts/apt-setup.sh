@@ -111,6 +111,8 @@ declare -a aptpackages=(
     #texlive-fonts-extra 
     #texlive-latex-extra
     plantuml
+    lsd
+    bat
 )
 
 echo "apt update"

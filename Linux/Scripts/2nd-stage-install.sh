@@ -7,6 +7,19 @@ export HISTIGNORE='*sudo -S*'
 echo "Please supply password to script"
 read ProvidedPasword
 
+declare -a brewpackages=(
+    nushell
+    tokei
+    dust
+    gitui
+    eureka
+    brew
+    dua
+    mdcat
+    topgrade
+    procs
+    trippy
+)
 
 declare -a snappackages=(
     core
@@ -31,6 +44,11 @@ declare -a snappackages=(
     simplenote # Simplenote is an easy way to keep notes, lists, ideas and more. 
     joplin # Joplin is an open source, free note taking application.
     dbgate # db client
+    bottom
+    macchina
+    alacritty
+    xplr
+    git-delta
 )
 
 declare -a npmpackages=(
@@ -92,8 +110,17 @@ done
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/$USER/.bashrc
 
-#install nushell
-brew install nushell
+echo "#####"
+echo "Install brew packages"
+for npmpackage in "${brewpackages[@]}"; do
+    echo "#####"
+    echo ""
+    echo "Installing ${brewpackages}"
+    brew install -g ${brewpackages}
+    echo ""
+    echo "#####"
+    echo ""
+done
 
 # install vacuum https://quobix.com/vacuum/
 brew install daveshanley/vacuum/vacuum 
