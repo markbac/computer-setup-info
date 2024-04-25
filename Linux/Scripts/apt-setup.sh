@@ -113,6 +113,9 @@ declare -a aptpackages=(
     plantuml
     lsd
     bat
+    duf # disk usage
+    zoxide # cd alternative
+    hyperfine # comand line benchmarking
 )
 
 echo "apt update"
