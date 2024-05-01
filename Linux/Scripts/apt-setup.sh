@@ -116,6 +116,7 @@ declare -a aptpackages=(
     duf # disk usage
     zoxide # cd alternative
     hyperfine # comand line benchmarking
+    nnn # file manager
 )
 
 echo "apt update"
