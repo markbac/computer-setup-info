@@ -23,6 +23,7 @@ declare -a pippackages=(
     httpie
     markdown
     mdbook-pdf-outline
+    hyfetch
 )
 
 declare -a pip3packages=(
