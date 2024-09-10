@@ -28,10 +28,10 @@ IF NOT "%1"=="ELEVATED" CALL :Elevate
 set "scoopPackages=topgrade macchina lsd broot dua neofetch"
 
 :: Define packages for Chocolatey
-set "chocoPackages=powershell-core bluescreenview microsoft-windows-terminal git vscode cascadiafonts firacode googlechrome 7zip.install 7zip powertoys irfanview irfanviewplugins notepadplusplus vlc adobereader gimp paint.net sysinternals zoom googledrive ccleaner treesizefree windirstat winscp dotnet oh-my-posh winmerge tortoisegit putty whatsapp vnc-viewer cppcheck gh xnview hwmonitor bottom gitui bat mdcat tokei onefetch"
+set "chocoPackages=powershell-core bluescreenview microsoft-windows-terminal git vscode cascadiafonts firacode googlechrome 7zip.install 7zip powertoys irfanview irfanviewplugins notepadplusplus vlc adobereader gimp paint.net sysinternals zoom googledrive ccleaner treesizefree windirstat winscp dotnet oh-my-posh winmerge tortoisegit putty whatsapp vnc-viewer cppcheck gh xnview hwmonitor bottom gitui bat mdcat tokei onefetch python3 bitdefender wolframalpha"
 
 :: Define packages for winget
-set "wingetPackages=procs trippy Microsoft.VisualStudio.2022.Community"
+set "wingetPackages=steam epicgames Microsoft.VisualStudio.2022.Community teams"
 
 :: Check and install Scoop
 powershell -command "scoop --version" > nul 2>&1
